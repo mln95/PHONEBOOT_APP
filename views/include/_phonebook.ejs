@@ -1,0 +1,15 @@
+<tbody>
+    <% for(let i=0; i < contact.length; i++) { %>
+        <tr>
+            <td><%= i+1 %></td>
+            <td><%= contact[i].firstname %></td>
+            <td><%= contact[i].lastname %></td>
+            <td><%= contact[i].email %></td>
+            <td><%= contact[i].phone %></td>
+            <td>
+                <a href="/updatecontact?id=<%=contact[i]._id%>"><i class="fa-solid fa-pen"></i></a>
+                <a  class="delete" data-id="<%= contact[i]._id%>"><i class="fa-solid fa-trash"></i></a>
+            </td>
+        </tr>
+   <% } %>
+</tbody>

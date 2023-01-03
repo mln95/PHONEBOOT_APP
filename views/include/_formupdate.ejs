@@ -1,0 +1,12 @@
+<form method="POST" id="update">
+    <input type="hidden" name="id" value="<%= contact._id %>">
+    <label>Firstname</label><br>
+    <input type="text" name="firstname" value="<%= contact.firstname %>"></input><br>
+    <label>Lastname</label><br>
+    <input type="text" name="lastname" value="<%= contact.lastname %>"></input><br>
+    <label>Email</label><br>
+    <input type="email" name="email" value="<%= contact.email %>"></input><br>
+    <label>Phone</label><br>
+    <input type="tel" name="phone" value="<%= contact.phone %>"></input><br>
+    <button type="submit" id="submit">Save contact</button>
+</form>
